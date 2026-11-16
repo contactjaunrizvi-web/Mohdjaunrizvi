@@ -1,0 +1,389 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohd Jaun Rizvi | Official Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --gold: #d6ad60;
+    --black: #080808;
+    --card: #151515;
+    --white: #ffffff;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #101010;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #292929;
+}
+
+.logo {
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    background: radial-gradient(circle, #29200e, #080808 65%);
+}
+
+.hero img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(35px, 7vw, 65px);
+    color: var(--gold);
+}
+
+.hero p {
+    color: #ccc;
+    margin: 12px 0 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--gold);
+    color: #000;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    margin: 5px;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--gold);
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    color: #ccc;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--gold);
+}
+
+.card h3 {
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 25px;
+    color: var(--gold);
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.project {
+    background: #171717;
+    border-radius: 12px;
+    padding: 25px;
+    border-left: 3px solid var(--gold);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #444;
+}
+
+.contact {
+    text-align: center;
+    background: #111;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #aaa;
+    border-top: 1px solid #333;
+}
+
+footer span {
+    color: var(--gold);
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+}
+
+.reveal {
+    animation: appear 1s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MOHD JAUN RIZVI</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <div class="reveal">
+        <!-- Replace profile.jpg with your photo -->
+        <img src="profile.jpg" alt="Mohd Jaun Rizvi">
+
+        <h1>Mohd Jaun Rizvi</h1>
+        <p>Entrepreneur | Web Designer | Tech Enthusiast</p>
+        <p>Building Ideas. Creating Technology. Shaping the Future.</p>
+
+        <a href="#about" class="btn">Explore More</a>
+        <a href="#contact" class="btn">Contact Me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+        <p>
+            Hello! I am Mohd Jaun Rizvi, an entrepreneur,
+            web designer and technology enthusiast.
+
+            I believe in turning creative ideas into
+            meaningful digital experiences.
+
+            I work on website designing, graphic designing,
+            digital advertising and technology-based projects.
+
+            My vision is to build innovative businesses
+            and create a strong global identity through technology.
+        </p>
+
+        <br>
+        <h3 style="color:#d6ad60">
+            President – Rizvi Group of Technologies
+        </h3>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="section-title">My Services & Pricing</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Basic Website</h3>
+            <p>Simple website for shops and small businesses.</p>
+            <div class="price">₹349</div>
+        </div>
+
+        <div class="card">
+            <h3>Premium Website</h3>
+            <p>Professional business website design.</p>
+            <div class="price">₹1,200</div>
+        </div>
+
+        <div class="card">
+            <h3>Video Advertisement</h3>
+            <p>15 Seconds Promotional Video.</p>
+            <div class="price">₹200</div>
+        </div>
+
+        <div class="card">
+            <h3>1 Minute Video Ad</h3>
+            <p>Creative promotional video editing.</p>
+            <div class="price">₹400</div>
+        </div>
+
+        <div class="card">
+            <h3>Graphic Designing</h3>
+            <p>Creative graphics and promotional designs.</p>
+            <div class="price">₹500</div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="cards">
+
+        <div class="project">
+            <h3>Rizvi Group of Technologies</h3>
+            <p>Technology and digital solutions company.</p>
+        </div>
+
+        <div class="project">
+            <h3>Jauvexa AI</h3>
+            <p>Upcoming AI-based project.</p>
+        </div>
+
+        <div class="project">
+            <h3>Lucknow GTA</h3>
+            <p>Upcoming gaming project.</p>
+        </div>
+
+        <div class="project">
+            <h3>Chatzo</h3>
+            <p>Upcoming communication project.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2 class="section-title">My Gallery</h2>
+
+    <div class="gallery">
+        <img src="photo1.jpg" alt="My Photo 1">
+        <img src="photo2.jpg" alt="My Photo 2">
+        <img src="photo3.jpg" alt="My Photo 3">
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2 class="section-title">Let's Work Together</h2>
+
+    <p>Have a project or business idea? Let's connect!</p>
+
+    <br>
+
+    <!-- Replace with your WhatsApp number -->
+    <a class="btn"
+       href="https://wa.me/9517340961"
+       target="_blank">
+       WhatsApp Me
+    </a>
+
+    <a class="btn"
+       href="https://instagram.com/jaunrizviii"
+       target="_blank">
+       Instagram
+    </a>
+
+    <br><br>
+
+    <p>Email: contactjaunrizvi@gmail.com</p>
+    <p>Instagram: @jaunrizviii</p>
+</section>
+
+<footer>
+    <p>© 2026 <span>Mohd Jaun Rizvi</span>. All Rights Reserved.</p>
+    <p>Designed with passion and creativity.</p>
+</footer>
+
+</body>
+              </html>
+              
